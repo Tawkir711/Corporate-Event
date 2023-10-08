@@ -4,6 +4,7 @@ import Home from "../components/Home/Home";
 import ErrorPage from "../components/Error/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import ServiceDetailsPage from "../components/ServiceDetailsPage/ServiceDetailsPage";
 
 
 
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element:<Register></Register>
+      },
+      {
+        path: '/service/:id',
+        element: <ServiceDetailsPage></ServiceDetailsPage>,
+        loader: () => fetch('/watch.json')
       }
     ]
   }

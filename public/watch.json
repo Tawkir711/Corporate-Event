@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/7L3kWcyT/product-4.png",
+    "name": "Rubber",
+    "price": "$29.99",
+    "title": "High-quality product for your needs. Grab it now while supplies last.",
+    "description": "Rubber is a versatile and reliable solution for all your needs. With top-notch quality and exceptional durability, it's a must-have. Whether you're at home or on the go, Rubber has you covered. Its advanced features make it perfect for both beginners and experts. Order now to experience the difference!",
+    "button": "View Details"
+  },
+  {
+    "id": 2,
+    "image": "https://i.postimg.cc/fWx80Nfd/product-6.png",
+    "name": "Leather",
+    "price": "$49.95",
+    "title": "Stylish and comfortable. Perfect for any occasion. Limited stock available.",
+    "description": "Elevate your style with Leather. This elegant and comfortable item is perfect for any occasion. Don't miss your chance to own this limited-edition piece of fashion. With its timeless design and superior craftsmanship, Leather stands out in a crowd. It's the perfect accessory to express your unique personality. Buy now to make a statement!",
+    "button": "View Details"
+  },
+  {
+    "id": 3,
+    "image": "https://i.postimg.cc/tg3sN2SB/product-1.png",
+    "name": "Alligator Leather",
+    "price": "$79.99",
+    "title": "Enhance your lifestyle with this top-rated product. Order today!",
+    "description": "Alligator Leather is designed to enhance your lifestyle. With its top-rated features and innovative design, it's the perfect addition to your daily routine. Whether you're at home, in the office, or on an adventure, Alligator Leather adapts to your needs. Its advanced technology ensures that you have the best experience possible. Order today and experience the difference it can make in your life",
+    "button": "View Details"
+  },
+  {
+    "id": 4,
+    "image": "https://i.postimg.cc/sgSx3Tr3/product-3.png",
+    "name": "Nylon",
+    "price": "$19.99",
+    "title": "Fun for all ages. Limited-time offer. Don't miss out!",
+    "description": "Looking for an affordable and practical solution? Nylon is your answer. With its unbeatable price and versatile functionality, it's a smart choice for individuals and families alike. Nylon is designed to simplify your life and provide convenience at your fingertips. Don't miss out—buy now and save big on this essential tool!",
+    "button": "View Details"
+  },
+  {
+    "id": 5,
+    "image": "https://i.postimg.cc/NF5GS4Dq/product-5.png",
+    "name": "Rose Gold",
+    "price": "$39.99",
+    "title": "Experience the difference. Upgrade your life today.",
+    "description": "Rose Gold is fun for all ages and perfect for quality family time. This limited-time offer won't last, so secure your piece of entertainment today. Rose Gold offers hours of enjoyment, creating lasting memories with loved ones. Its durable construction ensures that it will be a cherished part of your family for years to come. Don't miss out on the enjoyment and bonding that Rose Gold provides!",
+    "button": "View Details"
+  },
+  {
+    "id": 6,
+    "image": "https://i.postimg.cc/Bvpqvywf/product-2.png",
+    "name": "Leather",
+    "price": "$69.99",
+    "title": "Premium quality at an unbeatable price. Order now!",
+    "description": "Leather offers premium quality at an unbeatable price. With outstanding features and exceptional craftsmanship, it's a deal you can't miss. Whether you're a professional or a casual user, Leather delivers performance that exceeds expectations. Its sleek design and intuitive interface make it a pleasure to use. Order now to enjoy the benefits of excellence with Leather!",
+    "button": "View Details"
+  }
+]

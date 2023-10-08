@@ -3,11 +3,40 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
-  const link = <>
-  <li><NavLink to={'/'}>Home</NavLink></li>
-  <li><NavLink to={'/login'}>Login</NavLink></li>
-  <li><NavLink to={'/register'}>Register</NavLink></li>
-  </>
+  const link = (
+    <>
+      <li>
+        <NavLink
+          to={"/"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-red-600" : ""
+          }
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/login"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-red-600" : ""
+          }
+        >
+          Login
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/register"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-red-600" : ""
+          }
+        >
+          Register
+        </NavLink>
+      </li>
+    </>
+  );
 
   return (
     <div className="navbar bg-base-100">
