@@ -10,7 +10,7 @@ const Footer = () => {
           alt=""
         />
         <p>
-          Product Lunch Ltd.
+          Exclusive Event Ltd.
           <br />
           Providing reliable tech since 2023
         </p>

@@ -13,14 +13,9 @@ const Service = () => {
 
   return (
     <div className="my-10">
-      <h2 className="text-4xl font-semibold pb-2 text-center">
-        Core <span className='spanClr'>Service</span> for Smart People
+      <h2 className="text-4xl font-semibold text-center">
+        Our <span className='spanClr'>Service</span> Event
       </h2>
-      <p className="text-center font-medium text-[16px]">
-        The following reasons show the advantages of adding the watch to your
-        <br />
-        service pages, demos, and checkouts.
-      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
         {services.map((service) => (
           <ServiceDetails service={service} key={service.id}></ServiceDetails>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -39,7 +39,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 sticky top-0 z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,15 +62,18 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            { link}
+            {link}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Product Lunch</a>
+        <a className="btn btn-ghost normal-case text-xl"> Exclusive Event</a>
       </div>
-      <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {link}
-        </ul>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">{link}</ul>
+      </div>
+      <div className="navbar-end">
+        <Link to={'/login'}>
+          <button className="btn">Login</button>
+        </Link>
       </div>
     </div>
   );
