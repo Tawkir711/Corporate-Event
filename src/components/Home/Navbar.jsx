@@ -30,7 +30,8 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li>
+      {
+        user && <li>
         <NavLink
           to={"/eventPackage"}
           className={({ isActive, isPending }) =>
@@ -40,16 +41,19 @@ const Navbar = () => {
           EventPackage
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to={"/eventGallery"}
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-red-600" : ""
-          }
-        >
-          EventGallery
-        </NavLink>
-      </li>
+      }
+      { user &&
+        <li>
+          <NavLink
+            to={"/eventGallery"}
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "underline text-red-600" : ""
+            }
+          >
+            EventGallery
+          </NavLink>
+        </li>
+      }
       <li>
         <NavLink
           to={"/login"}
