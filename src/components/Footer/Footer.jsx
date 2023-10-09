@@ -4,11 +4,7 @@ const Footer = () => {
   return (
     <footer  className="footer p-10 bg-base-200 text-base-content">
       <aside>
-        <img
-          className="w-[80px] rounded-xl"
-          src="https://i.postimg.cc/PfwvStP3/Product-Lunches.png"
-          alt=""
-        />
+        <h2 className='text-2xl font-bold'>Corporate Event</h2>
         <p>
           Exclusive Event Ltd.
           <br />

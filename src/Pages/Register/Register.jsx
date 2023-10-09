@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/Context';
 import { Helmet } from 'react-helmet';
 import { FaGoogle } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser, signInGoogle } = useContext(AuthContext);
@@ -30,29 +31,42 @@ const Register = () => {
     }
 
     createUser(email, password)
-      .then(result => {
-        console.log(result.user);
+      .then(() => {
+        // regetare was successful
+
+        Swal.fire({
+          icon: "success",
+          title: "Your Log in Successfully",
+        });
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        // An error occurred during regestare
         Swal.fire({
           icon: "error",
-          title: "Oops...",
-          text: "Something went wrong!",
-          footer: '<a href="">Why do I have this issue?</a>',
+          title: "Oops Try Again",
+          text: error.message,
         });
-        
-      })
-      .catch(error => {
-        console.log(error);
-        
-    })
+      });
   };
   const handleGoogle = () => {
     signInGoogle()
-      .then((result) => {
-        console.log(result.user);
-        alert('hoice re ')
+      .then(() => {
+        // regetare was successful
+
+        Swal.fire({
+          icon: "success",
+          title: "Your Google Sign in Successfully",
+        });
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        console.log(error);
+        // An error occurred during regestare
+        Swal.fire({
+          icon: "error",
+          title: "Oops Try Again",
+          text: error.message,
+        });
       });
   };
 
