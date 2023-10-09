@@ -3,9 +3,13 @@ import './Home.css';
 import Service from '../Service/Service';
 import FAQ from '../../Pages/FAQ/FAQ';
 import AboutUs from '../../AboutUs/AboutUs';
+import { Helmet } from 'react-helmet';
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Corporate Event-Home</title>
+      </Helmet>
       <div
         className="hero min-h-screen bg-base-200"
         style={{

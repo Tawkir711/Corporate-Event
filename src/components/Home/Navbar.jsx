@@ -16,6 +16,7 @@ const Navbar = () => {
     user && user.photoURL
       ? user.photoURL
       : "https://i.postimg.cc/zB10zYpJ/userImg.jpg";
+  const userName = user && user.displayName 
 
   const link = (
     <>
@@ -105,9 +106,11 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{link}</ul>
       </div>
       <div className="navbar-end">
+          <p>{ userName}</p>
         <label className='btn btn-ghost btn-circle avatar'>
           <div className='w-10 rounded-full'>
             <img src={userImage} alt="" />
+            
           </div>
         </label>
         {

@@ -3,7 +3,7 @@ import React from 'react';
 const FAQ = () => {
   return (
     <section className="md:flex lg:flex gap-5 my-20">
-      <div className="flex justify-center items-center rounded-xl md:w-[100%] lg:w-[50%] px-4">
+      <div  className="flex justify-center items-center rounded-xl md:w-[100%] lg:w-[50%] px-4">
         <img
           src="https://i.postimg.cc/s2Bv6GrL/0-Fd-LLSj-LPud-Gd-Pt5.png"
           alt="FAQ img"

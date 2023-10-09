@@ -1,9 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const EventPackage = () => {
   return (
     <section>
-      <div class="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div
+        data-aos="fade-up-left"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        class="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl"
+      >
+        <Helmet>
+          <title>EventPackage</title>
+        </Helmet>
         <div>
           <div class="relative p-10 space-y-12 overflow-hidden md:grid md:grid-cols-2 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8 rounded-xl">
             <div class="relative flex flex-col p-8 bg-white">

@@ -1,9 +1,18 @@
 
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const EventGallery = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-10 px-2">
+    <div
+      data-aos="fade-up-left"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      className="grid grid-cols-2 md:grid-cols-4 gap-4 my-10 px-2"
+    >
+      <Helmet>
+        <title>EventGallery</title>
+      </Helmet>
       <div className="grid gap-4">
         <div>
           <img
