@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/Context';
 import { Helmet } from 'react-helmet';
 import { FaGoogle } from "react-icons/fa";
@@ -7,6 +7,10 @@ import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser, signInGoogle } = useContext(AuthContext);
+
+  const location = useLocation();
+  console.log(location);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
