@@ -15,16 +15,16 @@ const Home = () => {
       >
         <div className="hero-overlay bg-opacity-30"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">
-              A Night of Elegance
+          <div className="">
+            <h1 className="mb-5 text-2xl md:text-5xl font-bold">
+              A Night of Elegance <br />
               <span className="spanClr"> Exclusive Event</span>
             </h1>
-            <p className="mb-5 font-medium">
+            <p className="mb-5 text-sm md:text-xl font-medium">
               Join us for an unforgettable evening of sophistication and style
-              at <span className='spanClr'>Exclusive Event</span>. Step into a world of luxury and
-              exclusivity, where every detail has been meticulously curated to
-              provide you with an experience like no other.
+              at <br />  <span className='spanClr'>Exclusive Event</span>. Stepinto a world of luxury and
+              exclusivity, where every<br /> detail has been meticulously curated to
+              provide  you with an experience like no other.
             </p>
           </div>
         </div>

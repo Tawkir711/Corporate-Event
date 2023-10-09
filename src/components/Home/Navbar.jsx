@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../../Context/Context';
 
 const Navbar = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    logOut()
+      .then()
+      .catch()
+    
+  }
+  const userImage =
+    user && user.photoURL
+      ? user.photoURL
+      : "https://i.postimg.cc/zB10zYpJ/userImg.jpg";
 
   const link = (
     <>
@@ -13,6 +27,26 @@ const Navbar = () => {
           }
         >
           Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/eventPackage"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-red-600" : ""
+          }
+        >
+          EventPackage
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/eventGallery"}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-red-600" : ""
+          }
+        >
+          EventGallery
         </NavLink>
       </li>
       <li>
@@ -71,9 +105,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{link}</ul>
       </div>
       <div className="navbar-end">
+        <label className='btn btn-ghost btn-circle avatar'>
+          <div className='w-10 rounded-full'>
+            <img src={userImage} alt="" />
+          </div>
+        </label>
+        {
+          user ? <button onClick={handleSignOut} className="btn">Sign Out</button>
+            :
         <Link to={'/login'}>
           <button className="btn">Login</button>
         </Link>
+        }
       </div>
     </div>
   );

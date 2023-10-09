@@ -15,7 +15,7 @@ const ServiceDetails = ({ service }) => {
           <h2 className="card-title">Name: {name}</h2>
           <p>{title}</p>
           <h3 className="text-xl">Price: {price}</h3>
-          <p> {description.slice(0,150)} </p>
+          <p> {description.slice(0,150)} ........ </p>
           <div className="card-actions justify-center pt-4">
             <Link to={`/service/${id}`}>
               <button className="btn btn-grad">{button}</button>

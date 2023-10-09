@@ -5,6 +5,10 @@ import ErrorPage from "../components/Error/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ServiceDetailsPage from "../components/ServiceDetailsPage/ServiceDetailsPage";
+import PrivateRoute from "./PrivateRoute";
+import EventPrice from "../components/Event/EventPackage ";
+import EventPackage from "../components/Event/EventPackage ";
+import EventGallery from "../EventGallery/EventGallery";
 
 
 
@@ -28,8 +32,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/service/:id',
-        element: <ServiceDetailsPage></ServiceDetailsPage>,
+        element: <PrivateRoute><ServiceDetailsPage></ServiceDetailsPage></PrivateRoute>,
         loader: () => fetch('/watch.json')
+      },
+      {
+        path: '/eventPackage',
+        element: <PrivateRoute><EventPackage></EventPackage></PrivateRoute>
+      },
+      {
+        path: '/eventGallery',
+        element:<PrivateRoute><EventGallery></EventGallery></PrivateRoute>
       }
     ]
   }
